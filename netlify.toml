@@ -1,0 +1,14 @@
+[build]
+  publish = "public"
+
+# Enlace antiguo de la invitación → nueva dirección principal
+[[redirects]]
+  from = "/invitacion-boda-florales-125px-responsive.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
